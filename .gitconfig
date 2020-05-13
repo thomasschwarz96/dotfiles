@@ -1,0 +1,9 @@
+[user]
+	name = Thomas Schwarz
+	email = thomasschwarz96@web.de
+[core]
+	editor = vim 
+[alias]
+	fuckoff = reset --hard
+[gitreview]
+	username = thomasschwarz96
