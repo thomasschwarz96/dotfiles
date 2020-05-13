@@ -1,6 +1,7 @@
 [user]
 	name = Thomas Schwarz
 	email = thomasschwarz96@web.de
+	user = thomasschwarz96
 [core]
 	editor = vim 
 [alias]
