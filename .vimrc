@@ -51,6 +51,13 @@ filetype indent plugin on "Determine the type of a file
 syntax on
 colorscheme solarized8_flat
 
+" Cursor options
+" ==============
+if &term == 'xterm-256color' || &term == 'screen-256color'
+    let &t_SI = "\<Esc>[5 q"
+    let &t_EI = "\<Esc>[1 q"
+endif
+
 " Usability options
 " =================
 set ignorecase
