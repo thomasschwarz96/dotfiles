@@ -4,7 +4,7 @@
 "   | | | ' \/ _ \ '  \/ _` (_-<__ \/ _| ' \ V  V / _` | '_|_ /\_, / _ \
 "   |_| |_||_\___/_|_|_\__,_/__/___/\__|_||_\_/\_/\__,_|_| /__| /_/\___/
 " ======================================================================
-" URL: https://github.com/thomasschwarz96/vim-setup
+" URL: https://github.com/thomasschwarz96/dotfiles
 " Author: Thomas Schwarz
 " Description: My personal, basic and minimal VIM config file.
 " Colors: https://vimcolors.com - Here are really nice colorschemes
@@ -29,7 +29,6 @@ call vundle#end()
 " Basic options
 " =============
 set tabstop=4 
-set number
 set backspace=indent,eol,start
 set ruler
 set showcmd
@@ -39,6 +38,11 @@ set nobackup
 set nowb
 set noswapfile
 filetype plugin indent on
+
+" Hybrid line numbers
+" ===================
+set number relativenumber
+set nu rnu
 
 " Features
 " ========
