@@ -28,8 +28,9 @@ call vundle#end()
 
 " Basic options
 " =============
-set tabstop=4 
+set tabstop=4 softtabstop=4
 set backspace=indent,eol,start
+set colorcolumn=80
 set ruler
 set showcmd
 set incsearch
@@ -37,6 +38,9 @@ set hlsearch
 set nobackup
 set nowb
 set noswapfile
+set smartindent
+set smartcase
+set noerrorbells
 filetype plugin indent on
 
 " Hybrid line numbers
