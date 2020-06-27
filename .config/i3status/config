@@ -7,8 +7,14 @@
 # If the above line is not correctly displayed, fix your editor first!
 
 general {
-	colors = true
     interval = 5
+	colors = true
+
+	output_format = "i3bar"
+	color_good = "#00FF00"
+	color_degraded = "#FFFF00"
+	color_bad = "#FF0000"
+
 }
 
 order += "wireless _first_"
@@ -37,4 +43,5 @@ disk "/" {
 tztime local {
 	format = "%d.%m.%Y %H:%M"
 }
+
 
