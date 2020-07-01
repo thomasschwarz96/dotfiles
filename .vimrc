@@ -1,6 +1,6 @@
 " ======================================================================
 " URL: https://github.com/tomschwarz/dotfiles
-" Author: Thomas Schwarz
+" Author: Tom Schwarz
 " Description: My personal, basic and minimal VIM config file.
 " Colors: https://vimcolors.com - Here are really nice colorschemes
 " ======================================================================
