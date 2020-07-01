@@ -1,11 +1,11 @@
 [user]
-	name = Thomas Schwarz
+	name = Tom Schwarz
 	email = thomasschwarz96@web.de
 [credential]
-	username = thomasschwarz96
+	username = tomschwarz 
 [core]
 	editor = vim 
 [alias]
 	fuckoff = reset --hard
 [gitreview]
-	username = thomasschwarz96
+	username = tomschwarz

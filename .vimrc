@@ -1,10 +1,5 @@
 " ======================================================================
-"  _____ _                      ___     _                       ___  __  
-" |_   _| |_  ___ _ __  __ _ __/ __| __| |___ __ ____ _ _ _ ___/ _ \/ / 
-"   | | | ' \/ _ \ '  \/ _` (_-<__ \/ _| ' \ V  V / _` | '_|_ /\_, / _ \
-"   |_| |_||_\___/_|_|_\__,_/__/___/\__|_||_\_/\_/\__,_|_| /__| /_/\___/
-" ======================================================================
-" URL: https://github.com/thomasschwarz96/dotfiles
+" URL: https://github.com/tomschwarz/dotfiles
 " Author: Thomas Schwarz
 " Description: My personal, basic and minimal VIM config file.
 " Colors: https://vimcolors.com - Here are really nice colorschemes
