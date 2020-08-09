@@ -7,5 +7,6 @@
 	editor = vim 
 [alias]
 	fuckoff = reset --hard
+	cleanup = clean -dxf
 [gitreview]
 	username = tomschwarz
