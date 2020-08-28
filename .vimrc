@@ -23,7 +23,7 @@ call vundle#end()
 
 " Basic options
 " =============
-set tabstop=4 softtabstop=4
+set tabstop=4 softtabstop=4 expandtab shiftwidth=4 smarttab
 set backspace=indent,eol,start
 set colorcolumn=80
 set ruler
