@@ -197,3 +197,5 @@ client.urgent           #404040 #730000 #D9D9D9 #730000   #730000
 client.placeholder      #404040 #404040 #D9D9D9 #404040   #404040
 client.background       #FFFFFF
 
+# Custom window settings
+for_window [class="^.*"] border pixel 4
