@@ -70,4 +70,4 @@ set ruler
 " Keybindings
 " ===========
 nmap t :NERDTreeToggle<CR>
-
+set pastetoggle=<F3>
