@@ -8,5 +8,6 @@
 [alias]
 	fuckoff = reset --hard
 	cleanup = clean -dxf
+	notmerged = log --branches --not --remotes --no-walk --decorate --oneline
 [gitreview]
 	username = tomschwarz
