@@ -73,4 +73,5 @@ nmap t :NERDTreeToggle<CR>
 set pastetoggle=<F3>
 
 " Markdown highlighting
+" =====================
 let g:markdown_fenced_languages = ['html', 'python', 'bash=sh']
