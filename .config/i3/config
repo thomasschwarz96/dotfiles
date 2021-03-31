@@ -183,12 +183,16 @@ bar {
   }
 }
 
-# Custom shortcuts
+# =============================================================================
+# == CUSTOM SECTION ==
+# =============================================================================
+
+# Shortcuts
 bindsym $mod+Shift+v exec "/opt/enpass/Enpass"
 bindsym $mod+Shift+p exec "/opt/enpass/Enpass showassistant"
 bindsym $mod+c exec "`find ~/.local -iname clion.sh | head -1` >/dev/null &"
 
-# Custom UI colors
+# UI colors
 # class                 border  bground text    indicator child_border
 client.focused          #657D8C #657D8C #D9D9D9 #657D8C   #657D8C
 client.focused_inactive #404040 #404040 #D9D9D9 #484E50   #5F676A
@@ -197,5 +201,20 @@ client.urgent           #404040 #730000 #D9D9D9 #730000   #730000
 client.placeholder      #404040 #404040 #D9D9D9 #404040   #404040
 client.background       #FFFFFF
 
-# Custom window settings
+# Window settings
 for_window [class="^.*"] border pixel 4
+
+# Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
+
+# Screen brightness controls
+bindsym XF86MonBrightnessUp exec xrandr --output LVDS-1 --brightness 1
+bindsym XF86MonBrightnessDown exec xrandr --output LVDS-1 --brightness 0.7
+
+# Media player controls
+bindsym XF86AudioPlay exec playerctl play
+bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
