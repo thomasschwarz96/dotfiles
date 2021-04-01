@@ -1,0 +1,2 @@
+# Pywal restore
+wal -R
