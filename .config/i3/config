@@ -202,7 +202,7 @@ client.placeholder      #404040 #404040 #D9D9D9 #404040   #404040
 client.background       #FFFFFF
 
 # Window settings
-for_window [class="^.*"] border pixel 4
+for_window [class="^.*"] border pixel 1
 
 # Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
