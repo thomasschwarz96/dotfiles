@@ -1,3 +1,21 @@
 # Dotfiles
+My personal environment
 
-If you got some improvements or changes let me know.  
+## Required
+- `i3wm`
+- `i3status`
+- `dmenu`
+- `kitty`
+- `tmux`
+- `pywal`
+- `compton`
+- `Enpass`
+- `vim`
+- `ranger`
+- `git`
+
+## Optional
+- `aerc`
+- `neix`
+- `xfce4`
+    - Used for some programms
