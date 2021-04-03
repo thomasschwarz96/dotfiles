@@ -40,7 +40,7 @@ cpu_usage {
 
 volume master {
    format = "VOL :: %volume"
-   format_muted = "VOL :: %volume"
+   format_muted = "VOL :: MUTED (%volume)"
    device = "default"
    mixer = "Master"
    mixer_idx = 0
