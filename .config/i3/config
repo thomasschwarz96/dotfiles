@@ -192,6 +192,7 @@ bar {
 
 
 # Shortcuts
+bindsym $mod+o exec "obsidian"
 bindsym $mod+Shift+v exec "/opt/enpass/Enpass"
 bindsym $mod+Shift+p exec "/opt/enpass/Enpass showassistant"
 
