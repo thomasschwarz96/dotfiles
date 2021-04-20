@@ -193,6 +193,7 @@ bar {
 
 # Shortcuts
 bindsym $mod+Escape exec "i3lock --color=333333"
+bindsym $mod+Shift+Escape exec "shutdown now"
 bindsym $mod+o exec "obsidian"
 bindsym $mod+Shift+v exec "/opt/enpass/Enpass"
 bindsym $mod+Shift+p exec "/opt/enpass/Enpass showassistant"
