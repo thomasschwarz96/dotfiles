@@ -11,7 +11,7 @@ general {
 	colors = true
     separator = " | "
 
-	output_format = "none"
+	output_format = "i3bar"
 	color_good = "#00FF00"
 	color_degraded = "#FFFF00"
 	color_bad = "#FF0000"
