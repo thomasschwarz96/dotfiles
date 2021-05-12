@@ -136,24 +136,24 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
+# These bindings trigger as soon as you enter the resize mode
 
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
+# Pressing left will shrink the window’s width.
+# Pressing right will grow the window’s width.
+# Pressing up will shrink the window’s height.
+# Pressing down will grow the window’s height.
+    bindsym j resize shrink width 10 px or 10 ppt
         bindsym k resize grow height 10 px or 10 ppt
         bindsym l resize shrink height 10 px or 10 ppt
         bindsym odiaeresis resize grow width 10 px or 10 ppt
 
-        # same bindings, but for the arrow keys
+# same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
         bindsym Down resize grow height 10 px or 10 ppt
         bindsym Up resize shrink height 10 px or 10 ppt
         bindsym Right resize grow width 10 px or 10 ppt
 
-        # back to normal: Enter or Escape or $mod+r
+# back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
         bindsym Escape mode "default"
         bindsym $mod+r mode "default"
@@ -166,30 +166,31 @@ bindsym $mod+r mode "resize"
 # =============================================================================
 exec --no-startup-id "compton -b -f"
 
-# UI colors
-# - pywal
-set_from_resource $fg i3wm.color7 #f0f0f0
-set_from_resource $bg i3wm.color2 #333333
-set_from_resource $hc i3wm.color1 #f0f0f0
-
 # i3staus bar
+# class                 border  bground text    indicator child_border
+client.focused          #4C7899 #285577 #FFFFFF #2E9EF4   #285577
+client.focused_inactive #333333 #5F676A #FFFFFF #484E50   #5F676A
+client.unfocused        #333333 #222222 #888888 #292D2E   #222222
+client.urgent           #2F343A #900000 #FFFFFF #900000   #900000
+client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
+client.background       #FFFFFF
+
 bar {
     status_command i3status
-		
-	colors {
-		background $bg
-		statusline $fg
-		separator  $fg
+        colors {
+                background #111111
+                statusline #FFFFFF
+                separator  #666666
 
-        # workspace         border      background  text
-		focused_workspace   $bg         $fg         $bg
-		active_workspace    $bf         $bg         $fg
-		inactive_workspace  $bf         $hc         $bg
-		urgent_workspace    $bf         $hc         $fg
-        binding_mode        $bf         $hc         $fg
-  }
+                focused_workspace  #4C7899 #285577 #FFFFFF
+                active_workspace   #333333 #222222 #FFFFFF
+                inactive_workspace #333333 #222222 #888888
+                urgent_workspace   #2F343A #900000 #FFFFFF
+                binding_mode       #2F343A #900000 #FFFFFF
+        }
 }
 
+bindsym $mod+d exec "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '#005577' -sf '#EEEEEE' -fn 'monospace-10' -p '$ »'"
 
 # Shortcuts
 bindsym $mod+Escape exec "i3lock --color=333333"
@@ -198,18 +199,6 @@ bindsym $mod+o exec "obsidian"
 bindsym $mod+Shift+v exec "/opt/enpass/Enpass"
 bindsym $mod+Shift+p exec "/opt/enpass/Enpass showassistant"
 bindsym $mod+Shift+f exec i3-sensible-terminal -e "ranger"
-
-# class                 border  backgr. text indicator child_border
-client.focused          $bg     $bg     $fg  $bg       $bg
-client.focused_inactive $bg     $bg     $fg  $bg       $bg
-client.unfocused        $bg     $bg     $fg  $bg       $bg
-client.urgent           $bg     $bg     $fg  $bg       $bg
-client.placeholder      $bg     $bg     $fg  $bg       $bg
-
-client.background       $bg
-
-# Dmenu 
-bindsym $mod+d exec dmenu_run -nb "$fg" -nf "$bg" -sb "$bg" -sf "$fg" -fn 'monospace-10' -p '$'
 
 # Window settings
 for_window [class="^.*"] border pixel 1

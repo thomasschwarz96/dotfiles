@@ -16,6 +16,10 @@ case "$TERM" in
     xterm-color|*-256color) color_prompt=yes;;
 esac
 
+if [ -f ~/.bash_colors ]; then
+    . ~/.bash_colors
+fi
+
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
