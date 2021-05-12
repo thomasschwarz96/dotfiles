@@ -15,6 +15,9 @@ alias tmuxl="tmux ls"
 alias tmuxk="tmux kill-session -t"
 alias tmuxa="tmux a -t"
 
+# General aliases
+alias ls="ls --color=auto"
+
 # Pywal settings
 (cat ~/.cache/wal/sequences &)
 
