@@ -184,7 +184,7 @@ bar {
         # workspace         border      background  text
 		focused_workspace   $bg         $fg         $bg
 		active_workspace    $bf         $bg         $fg
-		inactive_workspace  $bf         $hc         $fg
+		inactive_workspace  $bf         $hc         $bg
 		urgent_workspace    $bf         $hc         $fg
         binding_mode        $bf         $hc         $fg
   }

@@ -7,7 +7,6 @@ My personal environment
 - `dmenu`
 - `kitty`
 - `tmux`
-- `pywal`
 - `compton`
 - `Enpass`
 - `vim`
