@@ -2,7 +2,7 @@
 export EDITOR=vim
 
 # Path extensions
-export PATH="${PATH}:${HOME}/.local/bin/"
+export PATH="${PATH}:${HOME}/.local/bin/:~/etc/scripts/"
 
 # HTB connect > open current directory
 alias htb_con="bash ~/htb/connect.sh ."
