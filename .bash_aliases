@@ -31,6 +31,9 @@ function git_prompt() {
     git branch 2> /dev/null | awk '$1 ~ /^\*/ {print "("$2") "}'
 }
 
+# Prompt characters
+priv="$"
+
 # Prompt colours
 nameC="${txtblu}"
 promptC="${txtylw}"
@@ -38,10 +41,11 @@ gitC="${txtpur}"
 
 # Red name for root
 if [ "${UID}" -eq "0" ]; then
+    priv="#"
     nameC="${txtred}"
     promptC="${txtred}"
 fi
 
 # Prompt definition
-export PS1="${nameC}\u ${txtwht}:: ${nameC}\w ${gitC}\$(git_prompt)${promptC}\\$ » ${txtwht}"
+export PS1="${promptC}${priv} ${nameC}\w ${gitC}\$(git_prompt)${promptC}» ${txtwht}"
 

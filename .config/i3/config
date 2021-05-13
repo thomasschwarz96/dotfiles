@@ -190,7 +190,7 @@ bar {
         }
 }
 
-bindsym $mod+d exec "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '#005577' -sf '#EEEEEE' -fn 'monospace-10' -p '$ »'"
+bindsym $mod+d exec "dmenu_run -nf '#BBBBBB' -nb '#111111' -sb '#005577' -sf '#EEEEEE' -fn 'monospace-10' -p '$ »'"
 
 # Shortcuts
 bindsym $mod+Escape exec "i3lock --color=333333"
