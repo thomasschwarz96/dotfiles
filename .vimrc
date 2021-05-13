@@ -36,6 +36,7 @@ set noswapfile
 set smartindent
 set smartcase
 set noerrorbells
+set list
 filetype plugin indent on
 
 " Hybrid line numbers
