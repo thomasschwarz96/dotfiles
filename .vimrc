@@ -53,7 +53,6 @@ filetype indent plugin on "Determine the type of a file
 " Styling options
 " ===============
 syntax on
-colorscheme solarized8_flat
 
 " Cursor options
 " ==============
