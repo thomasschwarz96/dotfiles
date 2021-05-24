@@ -13,6 +13,7 @@ alias tmuxk="tmux kill-session -t"
 alias tmuxa="tmux a -t"
 
 # General aliases
+alias :q="exit"
 alias ls="ls --color=auto"
 alias grep="grep --color=auto"
 
