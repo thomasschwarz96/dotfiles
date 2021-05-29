@@ -11,11 +11,23 @@ alias htb_con="bash ~/htb/connect.sh ."
 alias tmuxl="tmux ls"
 alias tmuxk="tmux kill-session -t"
 alias tmuxa="tmux a -t"
+alias tmuxn="tmux new -s"
 
 # General aliases
 alias :q="exit"
 alias ls="ls --color=auto"
 alias grep="grep --color=auto"
+
+# ===============
+# HACKING HELPERS
+# ===============
+function nmap_ips() {
+    cat $1 | grep for | cut -d" " -f5
+}
+
+# =======
+# HELPERS
+# =======
 
 # Copy file to clipboard
 function clip() {
@@ -26,6 +38,10 @@ function clip() {
 function vimod() {
     vim -p $(git status -suall | awk '{print $2}')
 }
+
+# ======
+# PROMPT
+# ======
 
 # Git prompt
 function git_prompt() {
