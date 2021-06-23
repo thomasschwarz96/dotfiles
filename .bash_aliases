@@ -25,6 +25,10 @@ function nmap_ips() {
     cat $1 | grep for | cut -d" " -f5
 }
 
+function nmap_ports() {
+    cat $1 | awk '/^[0-9]/ {print $1}' | cut -d"/" -f1 | paste -s -d ','
+}
+
 # =======
 # HELPERS
 # =======
@@ -65,4 +69,3 @@ fi
 
 # Prompt definition
 export PS1="${promptC}${priv} ${nameC}\w ${gitC}\$(git_prompt)${promptC}» ${txtwht}"
-
