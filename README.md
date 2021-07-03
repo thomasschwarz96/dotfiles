@@ -13,8 +13,7 @@ My personal environment
 - `ranger`
 - `git`
 
-## Optional
-- `aerc`
+## Optional, not required
 - `neix`
 - `xfce4`
     - Used for some programms
