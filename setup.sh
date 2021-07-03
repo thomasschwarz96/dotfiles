@@ -38,10 +38,30 @@ function do_setup() {
 }
 
 
-# ===========
-#  START APP 
-# ===========
+# ===============
+#  START INSTALL 
+# ===============
 clear
+
+# =========================
+#  CHECK REQUIRED PROGRAMS 
+# =========================
+PROGRAMS="i3 i3status dmenu kitty tmux vim git ranger compton feh"
+print_input_message "Install required programs? (y/n):"
+read -e INSTALL_PROGRAMS
+if [ $INSTALL_PROGRAMS = "n" ]; then
+    print_message "Skip installation. Make sure you have everything installed!"
+    sleep 4
+fi
+
+if [ $INSTALL_PROGRAMS = "y" ]; then
+    print_message "Programs to install: '$PROGRAMS'"
+    sudo apt install -y $PROGRAMS
+fi
+
+# ===================
+#  INSTALL .dotfiles 
+# ===================
 print_input_message "Destination path for setup (enter to use $HOME):"
 read -e DESTINATION
 if test -z "$DESTINATION" 
