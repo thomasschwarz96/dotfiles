@@ -1,6 +1,9 @@
 # Dotfiles
 My personal environment
 
+## Installation
+If you want to install my `.dotfiles` just clone it and run the `setup.sh` file.
+
 ## Required
 - `i3`
 - `i3status`
