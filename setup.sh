@@ -59,6 +59,15 @@ if [ $INSTALL_PROGRAMS = "y" ]; then
     sudo apt install -y $PROGRAMS
 fi
 
+# ==============
+#  CONFIGURE OS 
+# ==============
+print_message "Configure OS to boot into text mode (tty)"
+sudo systemctl set-default multi-user.target
+
+print_message "Update terminal emulator:"
+sudo update-alternatives --config x-terminal-emulator
+
 # ===================
 #  INSTALL .dotfiles 
 # ===================
